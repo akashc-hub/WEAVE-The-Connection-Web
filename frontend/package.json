@@ -1,5 +1,5 @@
 {
-  "name": "threads-yt",
+  "name": "weave",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +14,7 @@
     "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "backend": "file:..",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.12.21",
     "react": "^18.2.0",

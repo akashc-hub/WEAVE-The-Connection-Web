@@ -9,6 +9,8 @@ import useLogout from "../hooks/useLogout";
 import authScreenAtom from "../atoms/authAtom";
 import { BsFillChatQuoteFill } from "react-icons/bs";
 import { MdOutlineSettings } from "react-icons/md";
+import { FcCollaboration } from "react-icons/fc";
+import { CgCommunity } from "react-icons/cg";
 
 const Header = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -33,7 +35,7 @@ const Header = () => {
 				cursor={"pointer"}
 				alt='logo'
 				w={6}
-				src={colorMode === "dark" ? "/light-logo.svg" : "/dark-logo.svg"}
+				src={colorMode === "dark" ? "/logo-dark.jpg" : "/logo-light.jpg"}
 				onClick={toggleColorMode}
 			/>
 
@@ -45,8 +47,14 @@ const Header = () => {
 					<Link as={RouterLink} to={`/chat`}>
 						<BsFillChatQuoteFill size={20} />
 					</Link>
+					<Link href="https://weave-community.vercel.app/" target="_blank">
+						<CgCommunity size={30}/>
+					</Link>
 					<Link as={RouterLink} to={`/settings`}>
 						<MdOutlineSettings size={20} />
+					</Link>
+					<Link href="https://fig-pro-opal.vercel.app/" target="_blank">
+						<FcCollaboration size={20}/>
 					</Link>
 					<Button size={"xs"} onClick={logout}>
 						<FiLogOut size={20} />
